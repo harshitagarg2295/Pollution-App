@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 120px auto 0px;
+}
+
+.card {
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.weather-icon{
+    width: 150px;
+}
+.weather .temp{
+    font-size: 50px;
+    font-weight: 600;
+}
+.weather h2{
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   padding: 0 20px 0 30px;
+   margin-top: 30px;
+}
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.wind-img{
+    margin-left: 30px;
+}
+.humidity, .wind{
+    font-size: 20px;
+}
+.name{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.error p{
+   
+    font-size: 20px;
+    margin: 20px 0 20px 0px;
+    display: none;
+}
+.prev-btn{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+.prev-btn button{
+    font-size: 17px;
+    padding: 10px 14px;
+    background-color: #0761e7;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    display: none;
+}
+
+@media (max-width: 420px) {
+    .card {
+        padding: 20px;
+        max-width: 90%;
+        text-align: center;
+    }
+
+   .weather-icon{
+    width: 100px ;
+   }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 60px auto 0;
+    }
+
+    .card {
+        max-width: 95%;
+        padding: 20px;
+    }
+
+    .weather .temp {
+        font-size: 40px;
+    }
+
+    .weather h2 {
+        font-size: 28px;
+    }
+
+    .details {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .humidity, .wind {
+        font-size: 18px;
+    }
+}

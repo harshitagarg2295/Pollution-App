@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+          
+            <div class="error">
+                <p>Invalid City Name</p>
+            </div>
+            
+            <div class="weather">
+                <img src="images/clouds.png" class="weather-icon" alt="">
+                <h1 class="temp">32°C</h1>
+                <h2 class="city">India</h1>
+
+                <div class="details">
+
+                    <div class="col">
+                        <img src="images/humidity.png">
+                        <div class="info">
+                            <p class="humidity">50%</p>
+                            <p class="name">Humidity</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <img class = "wind-img" src="images/wind.png">
+                        <div class="info">
+                            <p class="wind">50 Km/hr</p>
+                            <p class="name">Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prev-btn">
+                <button class="prev">Prev</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+
+</html>

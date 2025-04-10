@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollution Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+
+        <h2>Pollution Detector</h1>
+
+            <div class="search">
+                <input type="text" placeholder="enter city name">
+                <button><img src="images/search.png" alt=""></button>
+            </div>
+
+            <div class="error">
+                <p>Invalid City Name / Location</p>
+            </div>
+
+            <div class="result">
+                <div class="aqi-box">
+
+                    <div class="aqi-city">
+                        <img src="images/location.svg" alt="location">
+                        <p class="city">Delhi</p>
+                    </div>
+
+                    <div class="aqi-des">
+                        <h2 class="aqi">5 </h2>
+                        <h3 class="state">Unhealthy</h3>
+                    </div>
+                </div>
+                <div class="pm-box">
+                    <span>PM2.5: <strong id="pm2_5">0</strong> µg/m³</span>
+                    <span>PM10: <strong id="pm10">0</strong> µg/m³</span>
+                </div>
+                <div class="health-advice">
+                    <p class="advice"> Air quality is <strong class="quality">poor.</strong></strong> Avoid outdoor
+                        activities.</p>
+                </div>
+
+            </div>
+            <div class="btn-box">
+
+                <button class="automatic btn">Search current location </button>
+
+                <button class="manual btn">Search by city</button>
+            </div>
+
+           <div class="nxt-btn">
+            <button class="next">Next</button>
+           </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
