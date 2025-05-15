@@ -6,6 +6,7 @@
 }
 
 body {
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,8 +188,12 @@ body {
 
 @media (max-width: 420px) {
     .card {
-        padding: 20px;
-        max-width: 90%;
+        /* padding: 20px; 
+        max-width: 90%; */
+        padding: 5px;
+        margin: 5px 5px;
+        max-width: 100%;
+        width: 100%;
     }
 
     .aqi-box {
