@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather | Pollution Detector</title>
+
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+
+    <main class="weather-page">
+
+        <!-- HEADER -->
+        <section class="weather-header">
+
+            <div class="badge">
+                <span class="badge-dot"></span>
+                Current Weather
+            </div>
+
+            <h1>
+                Weather for <span class="city-heading">your location</span>
+            </h1>
+
+            <p>
+                Here are the current weather conditions for your selected location.
+            </p>
+
+        </section>
+
+
+        <!-- WEATHER CARD -->
+        <div class="card">
+
+            <div class="weather">
+
+                <div class="weather-location">
+                    <span>📍</span>
+                    <h2 class="city">India</h2>
+                </div>
+
+
+                <img
+                    src="images/clouds.png"
+                    class="weather-icon"
+                    alt="Weather condition"
+                >
+
+
+                <p class="condition-label">
+                    Current Temperature
+                </p>
+
+                <h1 class="temp">
+                    32°C
+                </h1>
+
+
+                <!-- DETAILS -->
+
+                <div class="details">
+
+                    <div class="col">
+
+                        <div class="detail-icon">
+                            💧
+                        </div>
+
+                        <div class="info">
+
+                            <p class="humidity">
+                                50%
+                            </p>
+
+                            <p class="name">
+                                Humidity
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail-divider"></div>
+
+
+                    <div class="col">
+
+                        <div class="detail-icon">
+                            💨
+                        </div>
+
+                        <div class="info">
+
+                            <p class="wind">
+                                50 Km/hr
+                            </p>
+
+                            <p class="name">
+                                Wind Speed
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ERROR -->
+
+            <div class="error">
+
+                <p>
+                    Invalid City Name
+                </p>
+
+            </div>
+
+
+            <!-- PREVIOUS BUTTON -->
+
+            <div class="prev-btn">
+
+                <button class="prev">
+                    ← Back to Air Quality
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <footer class="footer">
+
+            <p>
+                Pollution Detector • Real-Time Air Quality Monitor
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="weather.js"></script>
+
+</body>
+
+</html>

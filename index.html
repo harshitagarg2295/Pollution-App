@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pollution Detector | Air Quality Monitor</title>
+
+    <meta name="description"
+        content="Check real-time air quality, pollution levels, PM2.5 and PM10 for your city or current location.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         MAIN APP
+    ========================== -->
+
+    <main class="page">
+
+        <!-- HERO / INTRO -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    Real-Time Air Quality
+                </div>
+
+                <h1>
+                    Know Your Air.<br>
+                    <span>Know Your Weather.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Monitor real-time air quality, pollution levels and
+                    weather conditions — all in one place.
+                </p>
+            </div>
+
+
+            <!-- =========================
+                 POLLUTION CARD
+            ========================== -->
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <div class="card-icon">
+                        🌍
+                    </div>
+
+                    <div>
+                        <h2>Pollution Detector</h2>
+                        <p>Check the air quality around you</p>
+                    </div>
+
+                </div>
+
+
+                <!-- SEARCH -->
+
+                <div class="search">
+
+                    <input type="text" placeholder="Enter city name" aria-label="Enter city name">
+
+                    <button aria-label="Search city">
+                        <img src="images/search.png" alt="Search">
+                    </button>
+
+                </div>
+
+
+                <!-- ERROR -->
+
+                <div class="error">
+                    <p>Invalid City Name / Location</p>
+                </div>
+
+
+                <!-- RESULT -->
+
+                <div class="result">
+
+                    <!-- AQI -->
+
+                    <div class="aqi-box">
+
+                        <div class="aqi-city">
+
+                            <img src="images/location.svg" alt="Location">
+
+                            <p class="city">Delhi</p>
+
+                        </div>
+
+
+                        <div class="aqi-des">
+
+                            <span class="aqi-label">
+                                AQI
+                            </span>
+
+                            <h2 class="aqi">5</h2>
+
+                            <h3 class="state">
+                                Very Poor
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PARTICULATE MATTER -->
+
+                    <div class="pm-box">
+
+                        <div class="pm-item">
+
+                            <span>PM2.5</span>
+
+                            <strong id="pm2_5">
+                                0
+                            </strong>
+
+                            <small>µg/m³</small>
+
+                        </div>
+
+
+                        <div class="pm-divider"></div>
+
+
+                        <div class="pm-item">
+
+                            <span>PM10</span>
+
+                            <strong id="pm10">
+                                0
+                            </strong>
+
+                            <small>µg/m³</small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- HEALTH ADVICE -->
+
+                    <div class="health-advice">
+
+                        <span class="advice-icon">
+                            ♥
+                        </span>
+
+                        <p class="advice">
+                            Air quality is
+                            <strong class="quality">
+                                poor.
+                            </strong>
+                            Avoid outdoor activities.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ACTION BUTTONS -->
+
+                <div class="btn-box">
+
+                    <button class="automatic btn">
+                        📍 Use Current Location
+                    </button>
+
+                    <button class="manual btn btn-outline">
+                        🔎 Search by City
+                    </button>
+
+                </div>
+
+
+                <!-- NEXT -->
+
+                <div class="nxt-btn">
+
+                    <button class="next">
+                        Check Weather →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FEATURES
+        ========================== -->
+
+        <section class="features">
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    📍
+                </div>
+
+                <div>
+                    <h3>Current Location</h3>
+                    <p>
+                        Get pollution data for your current location.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    🌫️
+                </div>
+
+                <div>
+                    <h3>Air Quality</h3>
+                    <p>
+                        View AQI, PM2.5 and PM10 levels.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    🌤️
+                </div>
+
+                <div>
+                    <h3>Weather Details</h3>
+                    <p>
+                        Continue to view current weather conditions.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer class="footer">
+
+            <p>
+                Pollution Detector • Real-Time Air Quality Monitor
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
