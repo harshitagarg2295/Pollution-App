@@ -33,25 +33,33 @@ async function checkWeather(city) {
         document.querySelector(".wind").innerHTML = data.wind.speed + "Km/hr";
         document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
 
-        if (data.weather[0].main == "Clouds") {
-            weatherIcon.src = "images/clouds.png"
-        }
-        else if (data.weather[0].main == "Clear") {
-            weatherIcon.src = "images/clear.png"
-        }
-        else if (data.weather[0].main == "Drizzle") {
-            weatherIcon.src = "images/drizzle.png"
-        }
-        else if (data.weather[0].main == "Mist") {
-            weatherIcon.src = "images/mist.png"
-        }
-        else if (data.weather[0].main == "Rain") {
-            weatherIcon.src = "images/rain.png"
-        }
-        else if (data.weather[0].main == "Snow") {
-            weatherIcon.src = "images/snow.png"
-        }
+        const weatherCondition = data.weather[0].main;
 
+        switch (weatherCondition) {
+            case "Clouds":
+                weatherIcon.src = "images/clouds.png";
+                break;
+            case "Clear":
+                weatherIcon.src = "images/clear.png";
+                break;
+            case "Drizzle":
+                weatherIcon.src = "images/drizzle.png";
+                break;
+            case "Mist":
+            case "Haze":
+            case "Smoke":
+                weatherIcon.src = "images/mist.png";
+                break;
+            case "Rain":
+                weatherIcon.src = "images/rain.png";
+                break;
+            case "Snow":
+                weatherIcon.src = "images/snow.png";
+                break;
+            default:
+                weatherIcon.src = "images/clouds.png"; // फ़ॉलबैक इमेज
+        }
+        
         document.querySelector(".weather").style.display = "block"
         document.querySelector(".error p").style.display = "none"
 
@@ -61,7 +69,7 @@ async function checkWeather(city) {
 
 }
 
-prevBtn.addEventListener("click",()=>{
+prevBtn.addEventListener("click", () => {
     window.location.href = "index.html";
 
 })

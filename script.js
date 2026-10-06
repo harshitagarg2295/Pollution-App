@@ -164,6 +164,13 @@ searchBtn.addEventListener("click", () => {
 
 })
 
+searchBox.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        event.preventDefault(); 
+        searchBtn.click();     
+    }
+});
+
 manualBtn.addEventListener("click", () => {
     document.querySelector(".search").style.display = "block";
     searchBox.value = ""; // input field reset
@@ -171,6 +178,7 @@ manualBtn.addEventListener("click", () => {
 });
 
 automaticBtn.addEventListener("click", () => {
+    searchBox.value = "";
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
             (position) => {
